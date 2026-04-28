@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cat-Dog Classifier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-card">
+        <header>
+            <div class="badge">AI Powered</div>
+            <h1>Cat vs Dog <span class="gradient-text">Classifier</span></h1>
+            <p>Upload a photo and our neural network will identify the breed.</p>
+        </header>
+
+        <div class="upload-container">
+            <label for="imageInput" class="drop-zone">
+                <span class="icon">📷</span>
+                <span class="text">Click to upload image</span>
+                <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)">
+            </label>
+
+            <div id="imagePreviewContainer" class="hidden">
+                <img id="imagePreview" src="" alt="Preview">
+            </div>
+
+            <button id="predictBtn" onclick="uploadImage()">Run Classification</button>
+        </div>
+
+        <div id="result" class="result-display">
+            <div class="placeholder">Results will appear here</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
