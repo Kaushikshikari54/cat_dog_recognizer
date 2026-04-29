@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# 🐱🐶 Cat vs Dog Image Classification
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
 
-## Available Scripts
+This project is a **Deep Learning-based Image Classification system** that predicts whether an input image is a **Cat or a Dog**.
 
-In the project directory, you can run:
+It uses a **Convolutional Neural Network (CNN)** model trained on labeled image data to achieve accurate predictions.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Classifies images into Cat 🐱 or Dog 🐶
+* Trained using CNN (Deep Learning)
+* Supports custom image input
+* Easy-to-run Python application
+* Scalable for real-world use cases
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧠 Tech Stack
 
-### `npm run build`
+* Python
+* TensorFlow / Keras
+* OpenCV
+* NumPy
+* Matplotlib
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cat-vs-dog/
+│── data/                # Dataset (training & testing images)
+│── model/               # Saved trained model
+│── app.py               # Prediction script / main app
+│── train.py             # Model training script
+│── requirements.txt     # Python dependencies
+│── README.md            # Project documentation
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/your-username/cat-vs-dog.git
+cd cat-vs-dog
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Create virtual environment (recommended)
 
-## Learn More
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+pip install -r requirements.txt
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ▶️ Usage
 
-### Analyzing the Bundle Size
+### Run the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+python app.py
+```
 
-### Making a Progressive Web App
+👉 The model will take an image input and output:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* **Cat 🐱**
+* **Dog 🐶**
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🧪 Model Training
 
-### Deployment
+To train the model from scratch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+python train.py
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📊 Dataset
+
+* Dataset used: Dogs vs Cats dataset
+* Contains labeled images of cats and dogs
+
+---
+
+## 📈 Model Details
+
+* Model Type: Convolutional Neural Network (CNN)
+* Loss Function: Binary Crossentropy
+* Optimizer: Adam
+* Output: Binary classification (Cat / Dog)
+
+---
+
+## 📸 Example Output
+
+**Input:** Image of a pet
+**Output:**
+
+```
+Prediction: Dog 🐶  
+Confidence: 95%
+```
+
+---
+
+## 🚀 Future Improvements
+
+* Improve model accuracy using Transfer Learning (ResNet, VGG)
+* Add web interface using Flask / Streamlit
+* Deploy on cloud (Render / AWS)
+* Add real-time webcam prediction
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repository and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Kaushik Shikari**
+GitHub: https://github.com/Kaushikshikari54
+
+---
+
